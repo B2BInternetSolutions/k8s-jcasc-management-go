@@ -1,11 +1,12 @@
 package configuration
 
 import (
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestGetAlternativeSecretsFilesEmpty(t *testing.T) {
@@ -167,7 +168,7 @@ func assertJenkinsConfig(conf *config, t *testing.T) {
 	assert.NotNil(t, conf.Jenkins.Persistence.AccessMode)
 	assert.Equal(t, conf.Jenkins.Persistence.AccessMode, "ReadWriteOnce")
 	assert.NotNil(t, conf.Jenkins.Persistence.StorageClass)
-	assert.Equal(t, conf.Jenkins.Persistence.StorageClass, "nfs-client")
+	assert.Equal(t, conf.Jenkins.Persistence.StorageClass, "k8s-storage-class--efs")
 	assert.NotNil(t, conf.Jenkins.Persistence.StorageSize)
 	assert.Equal(t, conf.Jenkins.Persistence.StorageSize, "2Gi")
 }

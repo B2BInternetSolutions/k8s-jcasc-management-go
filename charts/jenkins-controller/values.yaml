@@ -19,7 +19,8 @@ controller:
   # Used for label app.kubernetes.io/component
   componentName: "jenkins-controller"
   image: "jenkins/jenkins"
-  tag: "2.263.4"
+  tag: "2.319.1"
+  #tag: "2.263.4"
   imagePullPolicy: "Always"
   imagePullSecretName:
   # Optionally configure lifetime for controller-container
@@ -201,7 +202,8 @@ controller:
     - kubernetes:1.29.0
     - workflow-aggregator:2.6
     - git:4.5.2
-    - configuration-as-code:1.47
+    - configuration-as-code:1414.v878271fc496f
+#    - configuration-as-code:1.47
 
   # List of plugins to install in addition to those listed in controller.installPlugins
   additionalPlugins: []

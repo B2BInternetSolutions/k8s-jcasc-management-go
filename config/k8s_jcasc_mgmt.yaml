@@ -80,7 +80,7 @@ jenkins:
     # Define the Jenkins controller accessMode for the PVC (ReadWriteMany or ReadWriteOnce)
     accessMode: "ReadWriteOnce"
     # Define the persistence storage class for the Kubernetes
-    storageClass: "nfs-client"
+    storageClass: "k8s-storage-class--efs"
     # Define the default storage size for the Jenkins controller
     storageSize: "2Gi"
 

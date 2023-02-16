@@ -23,10 +23,14 @@ const DirProjectScriptsInstallPrefix = "i_"
 const DirProjectScriptsUninstallPrefix = "d_"
 
 // DirHelmJenkinsMaster : directory of the Jenkins Helm Charts
-const DirHelmJenkinsMaster = "/charts/jenkins-controller"
+const DirHelmJenkinsMaster = "charts/jenkins-controller"
+
+//const DirHelmJenkinsMaster = "/charts/jenkins-controller"
 
 // DirHelmNginxIngressCtrl : directory of the Nginx Ingress Controller Helm Charts
-const DirHelmNginxIngressCtrl = "/charts/nginx-ingress-controller"
+const DirHelmNginxIngressCtrl = "charts/nginx-ingress-controller"
+
+//const DirHelmNginxIngressCtrl = "/charts/nginx-ingress-controller"
 
 // FilenameConfigurationYaml : filename of the yaml configuration file
 const FilenameConfigurationYaml = "k8s_jcasc_mgmt.yaml"
@@ -255,7 +259,7 @@ const TemplatePvcStorageSize = "##JENKINS_MASTER_PERSISTENCE_STORAGE_SIZE##"
 // TemplatePvcAccessMode : Placeholder for the Jenkins master persistence access mode (ReadWriteMany, ReadWriteSingle...)
 const TemplatePvcAccessMode = "##JENKINS_MASTER_PERSISTENCE_ACCESS_MODE##"
 
-// TemplatePvcStorageClass : Placeholder for the Jenkins master persistence storage class (local-path, nfs-client...)
+// TemplatePvcStorageClass : Placeholder for the Jenkins master persistence storage class (local-path, k8s-storage-class--efs...)
 const TemplatePvcStorageClass = "##JENKINS_MASTER_PERSISTENCE_STORAGE_CLASS##"
 
 // TemplatePvcExistingVolumeClaim : Placeholder for the Jenkins master existing PVC

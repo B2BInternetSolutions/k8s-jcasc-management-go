@@ -12,3 +12,7 @@ secrets.sh
 # exclude .log files
 **/*.log
 **/*.log.1
+
+# exclude debug files
+__debug_bin
+
