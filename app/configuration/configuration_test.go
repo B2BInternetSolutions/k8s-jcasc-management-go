@@ -145,7 +145,9 @@ func assertJenkinsConfig(conf *config, t *testing.T) {
 	assert.NotNil(t, conf.Jenkins.Jcasc.AuthorizationStrategy.AllowAnonymousRead)
 	assert.True(t, conf.Jenkins.Jcasc.AuthorizationStrategy.AllowAnonymousRead)
 	assert.NotNil(t, conf.Jenkins.Jcasc.ConfigurationURL)
-	assert.Equal(t, conf.Jenkins.Jcasc.ConfigurationURL, "https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-project-config/main/{{ .Base.Namespace }}/jcasc_config.yaml")
+	assert.Equal(t, conf.Jenkins.Jcasc.ConfigurationURL, "https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/main/{{ .Base.Namespace }}/jcasc_config.yaml")
+	//assert.Equal(t, conf.Jenkins.Jcasc.ConfigurationURL, "https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-project-config/main/{{ .Base.Namespace }}/jcasc_config.yaml")
+
 	assert.NotNil(t, conf.Jenkins.Jcasc.CredentialIDs)
 	assert.NotNil(t, conf.Jenkins.Jcasc.CredentialIDs.Docker)
 	assert.Equal(t, conf.Jenkins.Jcasc.CredentialIDs.Docker, "docker-registry-credentialsid")

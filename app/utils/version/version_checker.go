@@ -2,11 +2,12 @@ package version
 
 import (
 	"bytes"
-	"github.com/hashicorp/go-version"
-	"golang.org/x/mod/semver"
 	"io/ioutil"
 	"k8s-management-go/app/utils/logger"
 	"net/http"
+
+	"github.com/hashicorp/go-version"
+	"golang.org/x/mod/semver"
 )
 
 // CheckVersion checks the version if there is a new one available
@@ -58,14 +59,17 @@ func readLocalVersion() (version string, err error) {
 }
 
 func receiveVersionFromGit() (version string, err error) {
-	resp, err := http.Get("https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-management-go/main/VERSION")
+	resp, err := http.Get("https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/main/VERSION")
+	//resp, err := http.Get("https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-management-go/main/VERSION")
+
 	if err != nil {
 		return "", err
 	}
 
 	// temporary hack for getting version from both URLs
 	if resp.StatusCode == 404 {
-		resp, err = http.Get("https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-management-go/master/VERSION")
+		resp, err = http.Get("https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/master/VERSION")
+		//resp, err = http.Get("https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-management-go/master/VERSION")
 		if err != nil {
 			return "", err
 		}
