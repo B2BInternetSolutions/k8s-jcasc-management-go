@@ -60,7 +60,7 @@ controller:
       # If it is disabled, it sets the variable only to the CASC_JENKINS_CONFIG environment variable, what we want.
       enabled: false
       # folder in the pod that should hold the collected dashboards:
-      folder: "https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/main/test-jenkins1/jcasc_config.yaml"
+      folder: "https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/master/projects/test-jenkins1/jcasc_config.yaml"
       #folder: "https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-project-config/main/test-jenkins1/jcasc_config.yaml"
 
 persistence:

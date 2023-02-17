@@ -27,7 +27,7 @@ jenkinsHelmValues:
         customJenkinsLabel: jenkins-controller-for-seed
         authorizationStrategyAllowAnonymousRead: "true"
         adminPassword: admin
-        sidecarsConfigAutoReloadFolder: https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/main/test-jenkins1/jcasc_config.yaml
+        sidecarsConfigAutoReloadFolder: https://raw.githubusercontent.com/B2BInternetSolutions/k8s-jcasc-management-go/master/projects/test-jenkins1/jcasc_config.yaml
         #sidecarsConfigAutoReloadFolder: https://raw.githubusercontent.com/Ragin-LundF/k8s-jcasc-project-config/main/test-jenkins1/jcasc_config.yaml
     persistence:
         accessMode: ReadWriteOnce
