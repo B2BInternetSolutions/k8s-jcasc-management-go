@@ -83,7 +83,7 @@ k8smanagement:
   rbac:
     # list of additional namespaces that should be deployable (adds RBAC roles to those namespaces)
     additionalNamespaces: 
-      - test-jenkins1--preview
-      - test-jenkins1--production
-      - test-jenkins1--qa
+      - demo-preview
+      - demo-dev
+      - demo-qa
       
