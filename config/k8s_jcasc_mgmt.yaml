@@ -53,7 +53,8 @@ jenkins:
       # if you do not need this: look into the 'jcasc_config.yaml' file and remove the environment variable settings
       vcs: "vcs-notification-credentialsid"
     # URL to the seed job script, that creates/deletes jobs from a simple repository file
-    seedJobURL: "https://github.com/Ragin-LundF/jenkins-jobdsl-remote.git"
+    seedJobURL: "https://github.com/B2BInternetSolutions/b2b--infrastructure--autoscaled-eks-cluster--v03--jenkins-jobs.git"
+    #seedJobURL: "https://github.com/Ragin-LundF/jenkins-jobdsl-remote.git"
 
   jobDSL:
     # If this variable is set, it is possible to add only the URI of the JobDSL configuration instead the full URL.

@@ -4,6 +4,9 @@ k8sManagement:
             - ipAddress: 0.0.0.1
               namespace: test-jenkins
               domain: test-jenkinsdomain.tld
-            - ipAddress: 0.0.0.0
+            - ipAddress: 0.0.0.2
               namespace: test-jenkins1
               domain: test-jenkins1domain.tld
+            - ipAddress: 0.0.0.0
+              namespace: test-jenkins2
+              domain: test-jenkins2domain.tld
