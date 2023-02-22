@@ -236,7 +236,7 @@ jenkins:
               # By defining this container here and doing always an 'inheritFrom: "pipeline-base-container"', it is possible to add
               # an own image here, that is located in an private registry to have the full control over the used containers and their versions.
               - name: "jnlp"
-                image: "jenkins/jnlp-slave:latest"
+                image: "jenkins/jnlp-slave:latest-jdk11"
                 privileged: false
                 alwaysPullImage: true
                 workingDir: "/home/jenkins/agent"
